@@ -16,19 +16,18 @@ Installation
 Clone the repository:
 
 bash
-Copy code
 git clone https://github.com/your-repo/fitness-tracking-app.git
 cd fitness-tracking-app
 Install the necessary dependencies:
 
 bash
-Copy code
+
 npm install
 Usage
 Run the application:
 
 bash
-Copy code
+
 node index.js
 The program will simulate adding two exercises (Running and Weightlifting), update the progress, and send a congratulatory message when the goal is reached.
 
@@ -39,9 +38,10 @@ goal: Represents the target number of calories to be burned.
 addExercise(exercise): Takes an exercise object (name and calories burned), updates the total calories burned, and checks if the goal is reached. If the goal is reached, the goalReached event is emitted.
 Event Listener
 A listener is set up to listen for the goalReached event and prints a congratulatory message when the event is triggered.
+
 Example Output
-yaml
-Copy code
+
+
 Running added. Calories burned: 500
 Total progress: 500 / 1000
 Weightlifting added. Calories burned: 600
